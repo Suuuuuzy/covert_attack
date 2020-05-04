@@ -1,0 +1,19 @@
+{
+  "name": "aquarium-server",
+  "version": "1.0.0",
+  "description": "server for multi-monitor aquarium",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "optionator": "^0.8.2",
+    "path": "^0.12.7",
+    "ws": "^6.0.0"
+  }
+}

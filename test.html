@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+</head> 
+<body> 
+
+<input type="button" value="no" onclick="no();"
+style="width: 150px; /* 宽度 */ 
+ height: 30px; /* 高度 */ 
+ border-width: 0px; /* 边框宽度 */ 
+ border-radius: 3px; /* 边框半径 */ 
+ background:#FFD700; /* 背景颜色 */ 
+ outline: none; /* 不显示轮廓线 */ 
+ font-family: Microsoft YaHei; /* 设置字体 */ 
+ color: white; /* 字体颜色 */
+ font-size: 17px; /* 字体大小 */" >
+
+<input type="button" value="small pic" onclick="smallpic();"
+style="width: 150px; /* 宽度 */ 
+ height: 30px; /* 高度 */ 
+ border-width: 0px; /* 边框宽度 */ 
+ border-radius: 3px; /* 边框半径 */ 
+ background:#FFD700; /* 背景颜色 */ 
+ outline: none; /* 不显示轮廓线 */ 
+ font-family: Microsoft YaHei; /* 设置字体 */ 
+ color: white; /* 字体颜色 */
+ font-size: 17px; /* 字体大小 */" >
+
+<input type="button" value="big pic" onclick="bigpic();"
+style="width: 150px; /* 宽度 */ 
+ height: 30px; /* 高度 */ 
+ border-width: 0px; /* 边框宽度 */ 
+ border-radius: 3px; /* 边框半径 */ 
+ background:#FFD700; /* 背景颜色 */ 
+ outline: none; /* 不显示轮廓线 */ 
+ font-family: Microsoft YaHei; /* 设置字体 */ 
+ color: white; /* 字体颜色 */
+ font-size: 17px; /* 字体大小 */" >
+  
+<input type="button" value="video" onclick="showVideo();"
+style="width: 150px; /* 宽度 */ 
+ height: 30px; /* 高度 */ 
+ border-width: 0px; /* 边框宽度 */ 
+ border-radius: 3px; /* 边框半径 */ 
+ background:#FFD700; /* 背景颜色 */ 
+ outline: none; /* 不显示轮廓线 */ 
+ font-family: Microsoft YaHei; /* 设置字体 */ 
+ color: white; /* 字体颜色 */
+ font-size: 17px; /* 字体大小 */" >
+
+<img id = 'big' src="middle.png"  style="display:none">
+<img id = 'small' src="small.png"  style="display:none">
+
+<div id = 'video' style='display:none'>
+   <img  src="big.png"  >
+<!-- <video controls>
+  <source src="/Users/jia/Downloads/人人影视/千年之恋之源氏物语 正片/【橘里橘气译制组】小体积  源氏物语千年之恋 日语中字.1080P .mp4" type="video/mp4">
+    <source src="Cover.mp4" type="video/mp4">
+您的浏览器不支持 video 标签。
+</video>  -->
+</div>
+
+</body> 
+</html> 
+
+
+<script type="text/javascript">
+    var small = document.getElementById('small');
+    var big = document.getElementById('big');
+    var video = document.getElementById('video');
+    function no(){
+        video.style.display='none';
+        small.style.display='none';
+        big.style.display='none';
+    }
+    function showVideo(){
+        video.style.display='';
+        small.style.display='none';
+        big.style.display='none';
+    }
+    function smallpic(){
+        // if(small.style.display==''){
+        //     small.style.display='none';
+        // }
+        // else{
+        //     small.style.display='';
+        // }
+        small.style.display='';
+        video.style.display = 'none';
+        big.style.display='none';
+    }
+    function bigpic(){
+        big.style.display='';
+        video.style.display = 'none';
+        small.style.display='none';
+    }
+</script>
+
+
+
+

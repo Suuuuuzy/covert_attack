@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+</head> 
+<body> 
+
+<input type="button" value="no" onclick="no();"
+style="width: 150px; /* 宽度 */ 
+ height: 30px; /* 高度 */ 
+ border-width: 0px; /* 边框宽度 */ 
+ border-radius: 3px; /* 边框半径 */ 
+ background:#FFD700; /* 背景颜色 */ 
+ outline: none; /* 不显示轮廓线 */ 
+ font-family: Microsoft YaHei; /* 设置字体 */ 
+ color: white; /* 字体颜色 */
+ font-size: 17px; /* 字体大小 */" >
+
+<input type="button" value="small pic" onclick="smallpic();"
+style="width: 150px; /* 宽度 */ 
+ height: 30px; /* 高度 */
+ border-width: 0px; /* 边框宽度 */ 
+ border-radius: 3px; /* 边框半径 */ 
+ background:#FFD700; /* 背景颜色 */ 
+ outline: none; /* 不显示轮廓线 */ 
+ font-family: Microsoft YaHei; /* 设置字体 */ 
+ color: white; /* 字体颜色 */
+ font-size: 17px; /* 字体大小 */" >
+
+<img id = 'small' src="big.png"  style="display:none">
+
+</body> 
+</html> 
+
+
+<script type="text/javascript">
+    var small = document.getElementById('small');
+    function no(){
+        small.style.display='none';
+    }
+    function smallpic(){
+        // if(small.style.display==''){
+        //     small.style.display='none';
+        // }
+        // else{
+        //     small.style.display='';
+        // }
+        small.style.display='';
+    }
+</script>
+
+
+
+
