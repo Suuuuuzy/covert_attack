@@ -1,5 +1,5 @@
 #!/bin/bash
-path1='/Users/jia/Desktop/covert_attack/WebGLSamples.github.io/aquariumFPSdata/'
+path1='WebGLSamples.github.io/aquariumFPSdata/'
 files=`ls -t $path1`
 for file1 in $files
 do
